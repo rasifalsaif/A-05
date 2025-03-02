@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="font-poppins flex justify-start items-start flex-col bg-violet-50 h-[200vh]">
+    <header class="w-[1536px] flex  items-center  justify-between my-6 mx-36 p-6 rounded-2xl bg-white">
+        <div class="flex items-center gap-2">
+            <img src="assets/logo.png" alt="">
+            <h1 class="text-4xl font-light">Dev<span class="font-bold">Board</span></h1>
+        </div>
+
+        <button id="home-btn" class="btn bg-blue-600 text-white">Back to Desk</button>
+    </header>
+    <main class="w-full flex flex-col items-center px-36">
+        <h1 class="text-4xl font-bold">Blogs</h1>
+    <!-- Question 1 -->
+        <div class="w-full bg-white rounded-md my-6">
+            <h2 class="p-5  text-3xl font-bold border-b border-dashed border-slate-400/50">Question-1: What are the different ways to select an element in the DOM?</h2>
+            <p class="p-5 text-2xl font-semibold text-gray-400">different ways of select dom is getElementById, getElementsByClassName, querySelectior and querySelectiorAll.</p>
+        </div>
+
+            <!-- Question 2 -->
+        <div class="w-full bg-white rounded-md my-6">
+            <h2 class="p-5  text-3xl font-bold border-b border-dashed border-slate-400/50">Question-2: What is the difference between innerHTML, innerText, and textContent?</h2>
+            <p class="p-5 text-2xl font-semibold text-gray-400">difference between innerHTML, innerText and textContent is innerHTML returns html elements and innerText returns elements text node on the other hand textContent can return hidden text also.</p>
+        </div>
+
+            <!-- Question 3 -->
+        <div class="w-full bg-white rounded-md my-6">
+            <h2 class="p-5  text-3xl font-bold border-b border-dashed border-slate-400/50">Question-3: What is event delegation in the DOM?</h2>
+            <p class="p-5 text-2xl font-semibold text-gray-400">When users interect with dom like click hover then dom fired and JavaScript find the event where occured, from the window to the target step by step this process called event delegation.</p>
+        </div>
+
+            <!-- Question 4 -->
+        <div class="w-full bg-white rounded-md my-6">
+            <h2 class="p-5  text-3xl font-bold border-b border-dashed border-slate-400/50">Question-4: What is event bubbling in the DOM?</h2>
+            <p class="p-5 text-2xl font-semibold text-gray-400">Event bubling is when a event occured in in an element its also occured in parent element because the parent event handaler also response when the child receved an event thats called event bubbling.</p>
+        </div>
+
+            <!-- Question 5 -->
+        <div class="w-full bg-white rounded-md my-6">
+            <h2 class="p-5  text-3xl font-bold border-b border-dashed border-slate-400/50">Question-5: How do you create, add, and remove elements using JavaScript?</h2>
+            <p class="p-5 text-2xl font-semibold text-gray-400">to create and element i use createElement, to add i use append or appendChild and to remove element i use remove or removeChild.</p>
+        </div>
+    </main>
+    <script>
+        document.getElementById('home-btn').addEventListener('click',()=>document.location.href='./')
+    </script>
+</body>
+</html>
